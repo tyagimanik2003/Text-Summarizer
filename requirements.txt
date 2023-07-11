@@ -1,0 +1,3 @@
+streamlit==0.90.0
+transformers==4.8.2
+streamlit-option-menu==1.1.0
