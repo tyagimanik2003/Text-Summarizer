@@ -1,7 +1,4 @@
 import streamlit as st
-
-# from transformers import BertTokenizer, BertLMHeadModel
-# from transformers import PegasusForConditionalGeneration, PegasusTokenizer
 from transformers import T5ForConditionalGeneration,T5Tokenizer
 from streamlit_option_menu import option_menu
 import base64
@@ -28,11 +25,6 @@ def add_bg_from_local(image_file):
 @st.cache_resource()
 def generate_summary(input_text):
     
-    # Load the Pegasus model and tokenizer
-    # model_name = 'google/pegasus-xsum'
-    # model = PegasusForConditionalGeneration.from_pretrained(model_name, is_decoder=True)
-    # tokenizer = PegasusTokenizer.from_pretrained(model_name)
-
     # Load the T5 model and tokenizer
     model_name = 't5-base'
     model = T5ForConditionalGeneration.from_pretrained(model_name)
