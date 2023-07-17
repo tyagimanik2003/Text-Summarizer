@@ -46,7 +46,7 @@ def main():
     
 
 
-    add_bg_from_local('D:\Text Summarizer\image.png')
+    add_bg_from_local('image.png')
     choice = option_menu(
 
         menu_title=None,
